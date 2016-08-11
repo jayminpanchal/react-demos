@@ -1,9 +1,3 @@
-# Angular2-quickstart-with-js
+# React Demos
 
-Angular2 Hello World with JS
-
-Steps to run this project
-
-1. Clone or download the Repository
-2. Then run command npm install
-3. to run project execute npm start
+Coming soon
