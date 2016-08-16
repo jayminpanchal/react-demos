@@ -11,7 +11,7 @@ var config = {
         filename: "bundle.js",
         publicPath: "/app/"
     },
-    modules: {
+    module: {
         loaders: [
             {
                 test: /\.js?/,
@@ -23,10 +23,8 @@ var config = {
             }
         ]
     },
-    devServer: {
-        // This is required for webpack-dev-server. The path should
-        // be an absolute path to your build destination.
-        outputPath: path.join(__dirname, 'build')
+    resolve: {
+        alias: {'react/lib/ReactMount': 'react-dom/lib/ReactMount'}
     }
 };
 module.exports = config;
