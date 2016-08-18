@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build",
-    "build": "webpack copy src\\index.html dist\\index.html && webpack-dev-server --content-base src/ --inline --hot",
-    "build:prod": "webpack copy src\\index.html dist\\index.html"
+    "build": "webpack -d && webpack-dev-server --content-base src/ --inline --hot"
   },
   "keywords": [
     "react",
@@ -16,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "babel-core": "^6.21.0",
+    "path": "^0.12.7",
     "react": "^15.4.1",
     "react-dom": "^15.4.1"
   },

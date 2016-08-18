@@ -1,18 +1,30 @@
-import React from "react";
-import {render} from "react-dom";
+var React = require("react");
+var ReactDOM = require("react-dom");
 
-class App extends React.Component {
-    render() {
+var App = React.createClass({
+    render: function () {
         return (
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
-                        <h1>Hello!!</h1>
+                        <InlineComponent/>
                     </div>
                 </div>
             </div>
         );
     }
-}
+});
 
-render(<App/>, window.document.getElementById("app"));
+var InlineComponent = React.createClass({
+    render: function () {
+        return (
+            <div className="row">
+                <div className="col-md-12">
+                    <h3>Inline Component</h3>
+                </div>
+            </div>
+        );
+    }
+});
+
+ReactDOM.render(<App/>, document.getElementById("app"));
