@@ -1,14 +1,19 @@
 var React = require("react");
 var ReactDOM = require("react-dom");
 var ExternalComponent = require("./ccomponent/ExternalComponent");
+var Header = require("./ccomponent/Header");
+var Home = require("./ccomponent/Home");
+
 var App = React.createClass({
     render: function () {
         return (
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
-                        <InlineComponent/>
-                        <ExternalComponent/>
+                        <Header/>
+                        <Home/>
+                        {/*<InlineComponent/>
+                         <ExternalComponent/>*/}
                     </div>
                 </div>
             </div>
