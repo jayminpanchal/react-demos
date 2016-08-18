@@ -1,6 +1,6 @@
 var React = require("react");
 var ReactDOM = require("react-dom");
-
+var ExternalComponent = require("./ccomponent/ExternalComponent");
 var App = React.createClass({
     render: function () {
         return (
@@ -8,6 +8,7 @@ var App = React.createClass({
                 <div className="row">
                     <div className="col-md-12">
                         <InlineComponent/>
+                        <ExternalComponent/>
                     </div>
                 </div>
             </div>
@@ -20,7 +21,7 @@ var InlineComponent = React.createClass({
         return (
             <div className="row">
                 <div className="col-md-12">
-                    <h3>Inline Component</h3>
+                    <h3 className="text-center">Inline Component</h3>
                 </div>
             </div>
         );
