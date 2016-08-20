@@ -5,7 +5,12 @@ var Home = require("./ccomponent/Home");
 
 var App = React.createClass({
         render: function () {
-            let user = {"name": "ABC", "mobile": "1234567890", "email": "abc@gmail.com"};
+            let user = {
+                name: "ABC",
+                mobile: "1234567890",
+                email: "abc@gmail.com",
+                hobbies: ["Sports", "Reading", "Coding"]
+            };
             return (
                 <div className="container">
                     <div className="row">

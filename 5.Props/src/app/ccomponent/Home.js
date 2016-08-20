@@ -15,6 +15,10 @@ var Home = React.createClass({
                         <p>User Name:{this.props.user.name}, Email: {this.props.user.name}, Mobile
                             No: {this.props.user.mobile} </p>
                         <br/>
+                        <h4>Hobbies</h4>
+                        <ul>
+                            {this.props.user.hobbies.map((hobby) => <li>{hobby}</li>)}
+                        </ul>
                     </div>
                 </div>
                 <div className="row">
