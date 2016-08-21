@@ -13,7 +13,7 @@ var App = React.createClass({
                 <div className="row">
                     <div className="col-md-12">
                         <Header/>
-                        <Home title={"Home Page"} description={"It is a home page."}>
+                        <Home title={"Home Page"} description={"It is a home page."} sayHello={this.sayHello}>
                         </Home>
                     </div>
                 </div>
