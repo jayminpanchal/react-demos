@@ -1,8 +1,8 @@
 var React = require("react");
 var ReactDOM = require("react-dom");
-var ExternalComponent = require("./ccomponent/ExternalComponent");
-var Header = require("./ccomponent/Header");
-var Home = require("./ccomponent/Home");
+var ExternalComponent = require("./component/ExternalComponent");
+var Header = require("./component/Header");
+var Home = require("./component/Home");
 
 var App = React.createClass({
     render: function () {
