@@ -22,7 +22,7 @@ var App = React.createClass({
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
-                        <Header/>
+                        <Header homeLink={this.state.homeLink}/>
                         <Home title={"Home Page"} description={"It is a home page."}
                               sayHello={this.sayHello}
                               changeLink={this.changeLinkName.bind(this)}>

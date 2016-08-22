@@ -1,7 +1,13 @@
 var React = require("react");
 
 var Home = React.createClass({
+    getInitialState: function () {
+        return {
+            homeLink: "Link Updated"
+        };
+    },
     onChangeLinkName: function () {
+        console.log("child click");
         this.props.changeLink(this.state.homeLink)
     },
     render: function () {
