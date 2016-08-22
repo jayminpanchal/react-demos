@@ -4,8 +4,18 @@ var Header = require("./component/Header");
 var Home = require("./component/Home");
 
 var App = React.createClass({
+    getInitialState: function () {
+        return {
+            homeLink: "Home"
+        };
+    },
     sayHello: function () {
         alert("Parent Called");
+    },
+    changeLinkName: function (newLinkName) {
+        this.setState({
+            homeLink: newLinkName
+        });
     },
     render: function () {
         return (
@@ -13,7 +23,9 @@ var App = React.createClass({
                 <div className="row">
                     <div className="col-md-12">
                         <Header/>
-                        <Home title={"Home Page"} description={"It is a home page."} sayHello={this.sayHello}>
+                        <Home title={"Home Page"} description={"It is a home page."}
+                              sayHello={this.sayHello}
+                              changeLink={this.changeLinkName.bind(this)}>
                         </Home>
                     </div>
                 </div>

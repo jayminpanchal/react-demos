@@ -1,6 +1,9 @@
 var React = require("react");
 
 var Home = React.createClass({
+    onChangeLinkName: function () {
+        this.props.changeLink(this.state.homeLink)
+    },
     render: function () {
         return (
             <section className="content">
@@ -10,7 +13,9 @@ var Home = React.createClass({
                         <hr/>
                         <p>{this.props.description} </p>
                         <button className="btn btn-info" onClick={this.props.sayHello}>
-                            Click to call Parent function
+                            Call Parent function
+                        </button>
+                        <button className="btn btn-danger" onClick={this.onChangeLinkName.bind(this)}>Change Link
                         </button>
                     </div>
                 </div>
