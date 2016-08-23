@@ -14,6 +14,5 @@ const Header = (props) => {
             </div>
         </nav>
     );
-
-}
+};
 module.exports = Header;

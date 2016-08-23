@@ -29,4 +29,10 @@ var Home = React.createClass({
         );
     }
 });
+Home.propTypes = {
+    title: React.PropTypes.string,
+    description: React.PropTypes.string,
+    sayHello: React.PropTypes.func,
+    changeLink: React.PropTypes.func
+};
 module.exports = Home;
