@@ -11,13 +11,13 @@ var App = React.createClass({
     },
     onChangeHomeMounted: function () {
         this.setState({
-            homeLink: false
+            homeMounted: false
         });
     },
     render: function () {
-        let homeComponent = "";
+        let homeComponent = '';
         if (this.state.homeMounted) {
-            homeComponent = ' <Home title={"Home Page"} description={"It is a home page."}> </Home>';
+            homeComponent = <Home title={"Home Page"} description={"It is a home page."}> </Home>;
         }
         return (
             <div className="container">
