@@ -11,7 +11,7 @@ var App = React.createClass({
     },
     onChangeHomeMounted: function () {
         this.setState({
-            homeMounted: false
+            homeMounted: !this.state.homeMounted
         });
     },
     render: function () {
