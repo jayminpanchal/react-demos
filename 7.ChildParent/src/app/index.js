@@ -25,7 +25,8 @@ var App = React.createClass({
                         <Header homeLink={this.state.homeLink}/>
                         <Home title={"Home Page"} description={"It is a home page."}
                               sayHello={this.sayHello}
-                              changeLink={this.changeLinkName.bind(this)}>
+                              changeLink={this.changeLinkName.bind(this)}
+                              initialLinkName={this.state.homeLink}>
                         </Home>
                     </div>
                 </div>

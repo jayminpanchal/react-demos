@@ -3,8 +3,13 @@ var React = require("react");
 var Home = React.createClass({
     getInitialState: function () {
         return {
-            homeLink: "Link Updated"
+            homeLink: this.props.initialLinkName
         };
+    },
+    onHandleChange: function (event) {
+        this.setState({
+            homeLink: event.target.value
+        });
     },
     onChangeLinkName: function () {
         console.log("child click");
@@ -21,6 +26,12 @@ var Home = React.createClass({
                         <button className="btn btn-info" onClick={this.props.sayHello}>
                             Call Parent function
                         </button>
+                        <br/>
+                        <br/>
+                        <input type="text" value={this.state.homeLink}
+                               onChange={(event) => this.onHandleChange(event)}/>
+                        <br/>
+                        <br/>
                         <button className="btn btn-danger" onClick={this.onChangeLinkName.bind(this)}>Change Link
                         </button>
                     </div>
