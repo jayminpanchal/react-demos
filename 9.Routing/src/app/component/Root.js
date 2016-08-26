@@ -1,7 +1,7 @@
 var React = require("react");
-var Header = require("./component/Header");
+var Header = require("./Header");
 
-var Home = React.createClass({
+var Root = React.createClass({
     render: function () {
         return (
             <section className="content">
@@ -15,4 +15,4 @@ var Home = React.createClass({
         );
     }
 });
-module.exports = Home;
+module.exports = Root;

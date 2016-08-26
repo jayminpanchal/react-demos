@@ -6,6 +6,7 @@ var Home = React.createClass({
             <section className="content">
                 <div className="row">
                     <div className="col-md-12">
+                        <h1>Home Page</h1>
                     </div>
                 </div>
             </section>
