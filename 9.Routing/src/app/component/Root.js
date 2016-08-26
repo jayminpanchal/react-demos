@@ -4,7 +4,7 @@ var Header = require("./Header");
 var Root = React.createClass({
     render: function () {
         return (
-            <section className="content">
+            <section className="container">
                 <div className="row">
                     <div className="col-md-12">
                         <Header/>

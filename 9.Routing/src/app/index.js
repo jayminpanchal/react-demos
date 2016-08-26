@@ -12,10 +12,11 @@ var App = React.createClass({
     render: function () {
         return (
             <Router history={browserHistory}>
-                <Route path={"/"} component={Root}/>
-                <Route path={"home"} component={Home}/>
-                <Route path={"user"} component={User}/>
-                <Route path={"aboutus"} component={Aboutus}/>
+                <Route path={"/"} component={Root}>
+                    <Route path={"home"} component={Home}/>
+                    <Route path={"user"} component={User}/>
+                    <Route path={"aboutus"} component={Aboutus}/>
+                </Route>
             </Router>
         );
     }
