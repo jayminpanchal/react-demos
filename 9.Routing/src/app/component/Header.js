@@ -1,4 +1,5 @@
 var React = require("react");
+import {Link} from "react-router";
 
 const Header = (props) => {
     return (
@@ -7,13 +8,13 @@ const Header = (props) => {
                 <div className="navbar-header">
                     <ul className="nav navbar-nav">
                         <li>
-                            <a href="#">Home</a>
+                            <Link to={"/home"}>Home</Link>
                         </li>
                         <li>
-                            <a href="#">About Us</a>
+                            <Link to={"/aboutus"}>About Us</Link>
                         </li>
                         <li>
-                            <a href="#">User</a>
+                            <Link to={"/user"}>User</Link>
                         </li>
                     </ul>
                 </div>
