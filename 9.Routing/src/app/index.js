@@ -15,7 +15,7 @@ var App = React.createClass({
                 <Route path={"/"} component={Root}>
                     <IndexRoute component={Home}/>
                     <Route path={"home"} component={Home}/>
-                    <Route path={"user"} component={User}/>
+                    <Route path={"user/:id/:name"} component={User}/>
                     <Route path={"aboutus"} component={Aboutus}/>
                 </Route>
             </Router>
